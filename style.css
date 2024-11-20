@@ -1,0 +1,312 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+body{
+    background-color: rgb(251, 180, 73);
+    width: 100%;
+}
+.nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    backdrop-filter:blur(50px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+}
+.nav .logo{
+    height: 40px;
+    width: 40px;
+    background-image: url("./img/logo.png");
+    background-position: center;
+    background-size: cover;
+    margin: 5px 0px;
+}
+.nav .nav-icons{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 40%;
+}
+.nav .nav-icons li a:hover{
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: 2px 5px 0 0;
+    border: 1px solid black;
+    color: black;
+}
+.nav .nav-icons li a{
+    background-color: rgb(42, 0, 106);
+    padding: 5px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: .5s ease;
+    text-decoration: none;
+    color: white;
+}
+.hero{
+    height: 90vh;
+    width: 100%;
+    background-image: url("./img/back-hero.jpg");
+    background-size: cover;
+    background-position:center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero .realHero{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}.Brand{
+    flex-basis: 80%;
+    
+}
+
+.h1{
+    font-size: 45px;
+    margin: 0px 10px;
+}
+.span{
+    width: 80%;
+    height: 5px;
+    background-color: rgb(42, 0, 106);
+    margin: 0px 10px;
+}
+.p{
+    margin: 10px 10px;
+    width:80%;
+    font-size: 18px;
+}
+.btn{
+    height: 13px;
+    background-color: rgb(42, 0, 106);
+    margin: 10px ;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    transition: .3s ease;
+}
+.btn a{
+    padding: 5px 15px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    box-shadow:2px 5px 0 0;;
+}
+.content{
+    margin: -20px 50px 20px 50px;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    padding: 10px 100px;
+    z-index: 2;
+    box-shadow: 1.5px 0px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+.heading2{
+    color: rgb(42, 0, 106);
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px;
+    
+}
+
+.service-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.service-box{
+    
+    width: 100%;
+    height: fit-content;
+    margin: 10px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(251, 180, 73);
+    transition: .3s ease;
+}
+
+.service-box:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 0px 0px;
+}
+
+.service-box .img{
+    background-image: url("./img/service.png");
+    background-position: center;
+    background-size: cover;
+    height: 140px;
+    width:140px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0px 10px;
+}
+.service-box .serv-cont{
+    width: 80%;
+    text-wrap: wrap;
+}
+.service-box .serv-cont p{
+    text-align: justify;
+    padding: 5px;
+    text-wrap: wrap;
+    margin-bottom: 10px;
+}
+.work-card .img{
+    height: 200px;
+    width: 200px;
+    margin: 10px 5px;
+    background-image: url("./img/work.png");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    border: 1px solid black;
+
+}
+.work-card{
+    background-color:  rgb(251, 180, 73);
+    flex-basis: 25%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    transition: .3s ease;
+}
+.work-card:hover{
+    transform: scale(1.08);
+    box-shadow: 2px 2px 0px 0px;
+}
+.work-cont{
+    width: 100%;
+}
+.work-card-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact{
+    width: 60%;
+    height:fit-content;
+    border: 1px solid black;
+    background-color: rgb(251, 180, 73);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20pxs;
+    text-align: center;
+}
+.contact .heading2{
+    margin-top: 20px 0px;
+}
+.contact input{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    width: 70%;
+}
+.contact textarea{
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#msg{
+    width: 70%;
+    height: 200px;
+}
+.contact-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    background-image: url("./img/foot.jfif");
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    margin-top:-20px ;
+    z-index: 1;
+}
+.menu-bar{
+    position: absolute;
+    visibility: hidden;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-image: url("./img/logo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width:880px) {
+    
+    .hero{
+        display: block;
+    }
+    .Brand{
+        position: relative;
+        top: 20vh;
+        left: 5%;
+    }
+    .h1{
+        font-size: 25px;
+    }
+    .p{
+        margin: 10px 10px;
+        width: 300px;
+        font-size: 18px;
+    }
+    .service-box{
+        flex-direction: column;
+        background-image: url("./img/service.png");
+        background-position: center;
+        background-size: cover;
+
+    }
+    .contact{
+        width: 100%;
+    }
+    
+    
+    .img{
+        visibility: hidden;
+        position: absolute;
+    }
+    .work-card{
+        background-image: url("./img/work.png");
+        background-position: center;
+        background-size: cover;
+        flex-basis: 100%;
+    }
+}
